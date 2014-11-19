@@ -1,4 +1,4 @@
-\documentclass[14pt]{beamer}
+\documentclass[13pt]{beamer}
 \usepackage{graphicx}
 \usepackage[utf8]{inputenc}
  
@@ -37,22 +37,55 @@
 \section{Geometric 2-Manifolds} % ==========================================================================
 % TITLE ------------------------------------------------
 \begin{frame}
-\frametitle{Definitions}
+\frametitle{Introduction}
 	\begin{itemize}
 		\item A \alert{Geometric 2-Manifold} is a connected surface that is locally isometric to either the Euclidean plane, hyperbolic plane, or sphere.
-		\item Cylinders and Cones (excluding cone point) are examples of 2-manifolds
+		\item Cones (excluding cone point), Cylinders, and Tori are examples of flat 2-manifolds
+    \item The double torus is a 2-manifold that is locally isometric to the hyperbolic plane
 	\end{itemize}
-	\logo{\includegraphics[height=1.5cm]{torus.jpg}}
-	\logo{\includegraphics[height=1.5cm]{hyperbolicpants.jpg}}
+	\begin{columns}[r] % the "c" option specifies center vertical alignment
+    \column{.3\textwidth} % column designated by a command
+     \centering
+     \includegraphics[height=2cm]{./img/torus}
+    \column{.3\textwidth}
+     \centering
+     \includegraphics[height=2cm]{./img/hyperbolicpants}
+    \column{.3\textwidth}
+     \centering
+     \includegraphics[height=2cm]{./img/doubletorus}
+  \end{columns}
 	%torus, hyperbolic pants, double torus
 \end{frame}
 
 \begin{frame}
 \frametitle{Gluings}
 	\begin{itemize}
-		\item \alert{Gluings} are when two edges or sides of a surface are ``connected'' and share the same set of points.
-		% gluings for torus, mobius strip
+    \item \alert{Gluings} are when two edges or sides of a surface are ``connected'' and share the same set of points.
+		\item The orientation of the gluings determine the structure of the manifold and whether it is flat, hyperbolic, or spherical.
 	\end{itemize}
+
+  \begin{columns}[r] % the "c" option specifies center vertical alignment
+    \begin{column}{.5\textwidth} % column designated by a command
+     \centering
+     \begin{block}
+      \includegraphics[height=2cm]{./img/torusgluing}
+     \end{block}
+    \end{column}
+     % \begin{block}
+     %  \includegraphics[height=2cm]{./img/coverings}
+     % \end{block}
+     % page 117 lower figure of shape of space
+    \begin{column}{.5\textwidth}
+     \centering
+     \begin{block}
+      \includegraphics[height=2cm]{./img/mobiusgluing}
+     \end{block}
+     \begin{block}
+      \includegraphics[height=2cm]{./img/mobius}
+     \end{block}
+     \end{column}
+  \end{columns}
+  % props- big torus, mobius strip
 \end{frame}
 
 \begin{frame}
