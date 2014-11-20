@@ -1,4 +1,4 @@
 GeometricManifolds
 ==================
 
-Presentation on Geometric Manifolds and the Shape of Space using LaTeX and the Beamer package.
+Presentation on Geometric Manifolds and the Shape of Space using the LaTeX Beamer class.
