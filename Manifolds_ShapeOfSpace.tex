@@ -1,7 +1,11 @@
 \documentclass[13pt]{beamer}
 \usepackage{graphicx}
 \usepackage[utf8]{inputenc}
- 
+
+% References
+\usepackage{natbib}
+\setbeamertemplate{bibliography item}[text]
+
 % Formatting
 \usetheme{Singapore}
 \usecolortheme{whale}
@@ -22,7 +26,6 @@
     \tableofcontents[currentsection]
   \end{frame}
 }
-% \logo{\includegraphics[height=1.5cm]{lion-logo.png}}
 
 \begin{document}
 % TITLE ------------------------------------------------
@@ -35,7 +38,7 @@
 \end{frame}
 
 \section{Geometric 2-Manifolds} % ==========================================================================
-% TITLE ------------------------------------------------
+% 2-MANIFOLDS ------------------------------------------------
 \begin{frame}
 \frametitle{Introduction}
 	\begin{itemize}
@@ -57,6 +60,7 @@
 	%torus, hyperbolic pants, double torus
 \end{frame}
 
+% GLUINGS ------------------------------------------------
 \begin{frame}
 \frametitle{Gluings}
 	\begin{itemize}
@@ -80,7 +84,7 @@
 \end{frame}
 
 \section{Geometric 3-Manifolds} % ==========================================================================
-% TITLE ------------------------------------------------
+% 3-MANIFOLDS ------------------------------------------------
 \begin{frame}
 \frametitle{Geometric 3-Manifolds}
   \begin{itemize}
@@ -100,6 +104,7 @@
   % \end{columns}
 \end{frame}
 
+% 3-TORUS ------------------------------------------------
 \begin{frame}
 \frametitle{3-Torus}
   \begin{itemize}
@@ -120,6 +125,7 @@
   \end{columns}
 \end{frame}
 
+% INSIDE THE 3-TORUS ------------------------------------------------
 \begin{frame}
 \frametitle{Inside the 3-Torus}
   \begin{columns}[c] % the "c" option specifies center vertical alignment
@@ -129,6 +135,7 @@
   \end{columns}
 \end{frame}
 
+% POINCARE SPACE ------------------------------------------------
 \begin{frame}
 \frametitle{Poincar\'e Dodecahedral Space}
   \begin{itemize}
@@ -146,6 +153,7 @@
   \end{columns}
 \end{frame}
 
+% POINCARE SPACE ------------------------------------------------
 \begin{frame}
 \frametitle{Poincar\'e Dodecahedral Space, cont.}
   \begin{itemize}
@@ -160,6 +168,7 @@
   \end{columns}
 \end{frame}
 
+% SEIFERT-WEBER SPACE ------------------------------------------------
 \begin{frame}
 \frametitle{Seifert-Weber Space}
   \begin{itemize}
@@ -177,6 +186,7 @@
   \end{columns}
 \end{frame}
 
+% SEIFERT-WEBER SPACE ------------------------------------------------
 \begin{frame}
 \frametitle{Seifert-Weber Space, cont.}
   \begin{itemize}
@@ -191,35 +201,103 @@
   \end{columns}
 \end{frame}
 
-\section{Cosmic Microwave Radiation} % ==========================================================================
-% TITLE ------------------------------------------------
+\section{The Shape of Space} % ==========================================================================
+% CMB ------------------------------------------------
 \begin{frame}
-\frametitle{Cosmic Microwave Radiation}
-This is a text in first frame. This is a text in first frame. This is a text in first frame.
+\frametitle{Cosmic Microwave Background}
+  \begin{itemize}
+    \item Following the Big Bang, radiation scattered throughout the Universe. As the Universe expanded overtime, this radiation has cooled to microwaves known as \alert{Cosmic Microwave Background (CMB)}.
+    \item First observed in 1965 by Arno Penzias and Robert Wilson of Bell Labs.
+    \item Interesting properties of CMB include:
+          \begin{itemize}
+            \item Nearly uniform temperature with only small fluctuations.
+            \item Distributed evenly throughout space.
+            \item Travels in all directions
+          \end{itemize}
+  \end{itemize}
 \end{frame}
 
-\section{The Shape of Space} % ==========================================================================
-% TITLE ------------------------------------------------
+% LSS ------------------------------------------------
+\begin{frame}
+\frametitle{Last Scattering Surface}
+  \begin{itemize}
+    \item Radiation that we observe has travelled the same distance from where they started.
+    \item All microwaves observed at one time originated on the surface of the \alert{Last Scattering Sphere (LSS)}.
+    \item The LSS is unique to the observer, so viewing from Earth, Earth is at the center of its LSS.
+    \item There are slight fluctuations in the temperature of the CMB due to the differences in densities of their starting positions.
+  \end{itemize}
+
+  % \begin{columns}[c] % the "c" option specifies center vertical alignment
+  %   \column{1\textwidth}
+  %    \centering
+  %    \includegraphics[height=5cm]{./img/lss} %page 301
+  % \end{columns}
+\end{frame}
+
+% LSS ------------------------------------------------
 \begin{frame}
 \frametitle{The Shape of Space}
-This is a text in first frame. This is a text in first frame. This is a text in first frame.
+  \begin{itemize}
+    \item Assuming the Universe is a 3-Manifold, there exists reoccuring images of the Earth at the center of its LSS.
+    \item If the LSS is larger than a single image of the Universe, then it overlaps itself.
+  \end{itemize}
+
+  % \begin{columns}[c] % the "c" option specifies center vertical alignment
+  %   \column{1\textwidth}
+  %    \centering
+  %    \includegraphics[height=5cm]{./img/lss} %page 304
+  % \end{columns}
+\end{frame}
+
+% SHAPE OF SPACE ------------------------------------------------
+\begin{frame}
+\frametitle{The Shape of Space, cont.}
+  \begin{itemize}
+    \item In the case of the 3-Torus Universe, circles form along each side of the cube where the LSS overlaps itself.
+    \item The circles on opposite sides contain the same set of CMB, which produce the same temperature pattern.
+  \end{itemize}
+
+  % \begin{columns}[c] % the "c" option specifies center vertical alignment
+  %   \column{1\textwidth}
+  %    \centering
+  %    \includegraphics[height=5cm]{./img/lss} %page 359 - Experiencing Geo 
+  % \end{columns}
+\end{frame}
+
+% CONCLUSION ------------------------------------------------
+\begin{frame}
+\frametitle{Conclusion}
+  \begin{itemize}
+    \item The orientation of the temperature patterns of these sets hint at the gluings of the 3-Manifold Universe, and ultimately the geometric structure.
+    \item NASA's Wilkinson Microwave Anisotropy Probe (WMAP) mapped out the CMB and its temperature patterns.
+    \item Results showed that Universe should hold properties similar to Euclidean Geometry
+  \end{itemize}
+
+  % \begin{columns}[c] % the "c" option specifies center vertical alignment
+  %   \column{1\textwidth}
+  %    \centering
+  %    \includegraphics[height=5cm]{./img/lss} %page 359 - Experiencing Geo 
+  % \end{columns}
+\end{frame}
+
+% CONCLUSION ------------------------------------------------
+\begin{frame}
+\frametitle{Questions?}
+   \begin{columns}[c] % the "c" option specifies center vertical alignment
+    \column{.5\textwidth}
+     \centering
+     \includegraphics[height=5cm]{./img/torus} % shape of space cover
+    \column{.5\textwidth}
+     \centering
+     \includegraphics[height=5cm]{./img/torus} % wraparound universe cover
+  \end{columns}
 \end{frame}
 
 % References ------------------------------------------------
  \begin{frame}[allowframebreaks]
-  \frametitle{References}    
-  \begin{thebibliography}{10}    
-  \beamertemplatebookbibitems
-  \bibitem{Autor1990}
-    A.~Autor.
-    \newblock {\em Introduction to Giving Presentations}.
-    \newblock Klein-Verlag, 1990.
-  \beamertemplatearticlebibitems
-  \bibitem{Jemand2000}
-    S.~Jemand.
-    \newblock On this and that.
-    \newblock {\em Journal of This and That}, 2(1):50--100, 2000.
-  \end{thebibliography}
+  \frametitle{References} 
+  \scriptsize{\bibliographystyle{acm}}
+  \bibliography{workscited}
 \end{frame}
 
 \end{document}
