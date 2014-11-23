@@ -1,6 +1,10 @@
 \documentclass[13pt]{beamer}
 \usepackage{graphicx}
 \usepackage[utf8]{inputenc}
+\usepackage[skip=2pt,font=scriptsize]{caption}
+
+% Captions
+\captionsetup{labelformat=empty,labelsep=none}
 
 % References
 \usepackage{natbib}
@@ -44,18 +48,21 @@
 	\begin{itemize}
 		\item A \alert{Geometric 2-Manifold} is a connected surface that is locally isometric to either the Euclidean plane, hyperbolic plane, or sphere.
 		\item Cones (excluding cone point), Cylinders, and Tori are examples of flat 2-manifolds
-    \item The double torus is a 2-manifold that is locally isometric to the hyperbolic plane
+    % \item The double torus is a 2-manifold that is locally isometric to the hyperbolic plane
 	\end{itemize}
 	\begin{columns}[r] % the "c" option specifies center vertical alignment
-    \column{.3\textwidth} % column designated by a command
+    \column{1\textwidth} % column designated by a command
      \centering
-     \includegraphics[height=2cm]{./img/torus}
-    \column{.3\textwidth}
-     \centering
-     \includegraphics[height=2cm]{./img/hyperbolicpants}
-    \column{.3\textwidth}
-     \centering
-     \includegraphics[height=2cm]{./img/doubletorus}
+      \begin{figure}
+        \includegraphics[height=2cm]{./img/torus}
+        \caption{http://commons.wikimedia.org/wiki/File:Simple\_Torus.svg}
+      \end{figure}
+    % \column{.3\textwidth}
+    %  \centering
+    %  \includegraphics[height=2cm]{./img/hyperbolicpants}
+    % \column{.3\textwidth}
+    %  \centering
+    %  \includegraphics[height=2cm]{./img/doubletorus}
   \end{columns}
 	%torus, hyperbolic pants, double torus
 \end{frame}
@@ -71,16 +78,20 @@
   \begin{columns}[r] % the "c" option specifies center vertical alignment
     \column{.5\textwidth} % column designated by a command
      \centering
-      \includegraphics[height=3cm]{./img/torusgluing}
+      \begin{figure}
+        \includegraphics[height=3cm]{./img/torusgluing}
+      \end{figure}
     \column{.5\textwidth}
      \centering
-     \includegraphics[height=3cm]{./img/torusconstruction}
+      \begin{figure}
+        \includegraphics[height=3cm]{./img/torusconstruction}
+        \caption{The Shape of Space - Figure 7.14, pg. 117}
+      \end{figure}
      % page 117 lower figure of shape of space
     % \column{.3\textwidth}
     %  \centering
     %   \includegraphics[height=3cm]{./img/mobiusgluing}
   \end{columns}
-  % props- big torus, mobius strip
 \end{frame}
 
 \section{Geometric 3-Manifolds} % ==========================================================================
@@ -96,10 +107,16 @@
   \begin{columns}[r] % the "c" option specifies center vertical alignment
     \column{.5\textwidth} % column designated by a command
      \centering
-      \includegraphics[height=3cm]{./img/cube3sphere}
+      \begin{figure}
+        \includegraphics[height=2.70cm]{./img/cube3sphere}
+        \caption{The Shape of Space - Figure 14.7, pg. 209}
+      \end{figure}
     \column{.5\textwidth}
      \centering
-     \includegraphics[height=3cm]{./img/cubeH3}
+      \begin{figure}
+        \includegraphics[height=2.70cm]{./img/cubeH3}
+        \caption{The Shape of Space - Figure 15.2, pg. 215}
+      \end{figure}
      % page 209, 215
   \end{columns}
 \end{frame}
@@ -116,24 +133,30 @@
     \item Cubes perfectly fill 3-space (8 cubes meet at each corner).
   \end{itemize}
   \begin{columns}[r] % the "c" option specifies center vertical alignment
-    \column{.5\textwidth} % column designated by a command
+    \column{1\textwidth} % column designated by a command
      \centering
-     \includegraphics[height=4cm]{./img/cubegluing}
-    \column{.5\textwidth}
-     \centering
-     \includegraphics[height=4cm]{./img/torus3} % page 106
+      \begin{figure}
+        \includegraphics[height=4cm]{./img/cubegluing}
+        \caption{http://euler.slu.edu/escher/index.php/The\_Three\_Geometries}
+      \end{figure}
+    % \column{.5\textwidth}
+    %  \centering
+    %  \includegraphics[height=4cm]{./img/torus3} % page 106
   \end{columns}
 \end{frame}
 
+
+% show curved space application
+
 % INSIDE THE 3-TORUS ------------------------------------------------
-\begin{frame}
-\frametitle{Inside the 3-Torus}
-  \begin{columns}[c] % the "c" option specifies center vertical alignment
-    \column{1\textwidth}
-     \centering
-     \includegraphics[height=7cm]{./img/inside3torus}
-  \end{columns}
-\end{frame}
+% \begin{frame}
+% \frametitle{Inside the 3-Torus}
+%   \begin{columns}[c] % the "c" option specifies center vertical alignment
+%     \column{1\textwidth}
+%      \centering
+%      \includegraphics[height=7cm]{./img/inside3torus}
+%   \end{columns}
+% \end{frame}
 
 % POINCARE SPACE ------------------------------------------------
 \begin{frame}
@@ -149,7 +172,10 @@
   \begin{columns}[c] % the "c" option specifies center vertical alignment
     \column{1\textwidth}
      \centering
-     \includegraphics[height=5cm]{./img/one_tenth}
+      \begin{figure}
+        \includegraphics[height=5cm]{./img/one_tenth}
+        \caption{The Shape of Space - Figure 16.3, pg. 222}
+      \end{figure}
   \end{columns}
 \end{frame}
 
@@ -164,9 +190,14 @@
   \begin{columns}[c] % the "c" option specifies center vertical alignment
     \column{1\textwidth}
      \centering
-     \includegraphics[height=5cm]{./img/poincarespace}
+      \begin{figure}
+        \includegraphics[height=5cm]{./img/poincarespace}
+        \caption{The Shape of Space - Figure 16.4, pg. 223}
+      \end{figure}
   \end{columns}
 \end{frame}
+
+%SHOW MODEL
 
 % SEIFERT-WEBER SPACE ------------------------------------------------
 \begin{frame}
@@ -182,7 +213,10 @@
   \begin{columns}[c] % the "c" option specifies center vertical alignment
     \column{1\textwidth}
      \centering
-     \includegraphics[height=5cm]{./img/three_tenths}
+      \begin{figure}
+        \includegraphics[height=4.75cm]{./img/three_tenths}
+        \caption{The Shape of Space - Figure 16.1, pg. 220}
+      \end{figure}
   \end{columns}
 \end{frame}
 
@@ -197,40 +231,79 @@
   \begin{columns}[c] % the "c" option specifies center vertical alignment
     \column{1\textwidth}
      \centering
-     \includegraphics[height=5cm]{./img/seifertspace}
+      \begin{figure}
+        \includegraphics[height=5cm]{./img/seifertspace}
+        \caption{The Shape of Space - Figure 16.2, pg. 221}
+      \end{figure}
   \end{columns}
 \end{frame}
+
+% SHOW SPACE
 
 \section{The Shape of Space} % ==========================================================================
 % CMB ------------------------------------------------
 \begin{frame}
 \frametitle{Cosmic Microwave Background}
   \begin{itemize}
-    \item Following the Big Bang, radiation scattered throughout the Universe. As the Universe expanded overtime, this radiation has cooled to microwaves known as \alert{Cosmic Microwave Background (CMB)}.
-    \item First observed in 1965 by Arno Penzias and Robert Wilson of Bell Labs.
-    \item Interesting properties of CMB include:
-          \begin{itemize}
-            \item Nearly uniform temperature with only small fluctuations.
-            \item Distributed evenly throughout space.
-            \item Travels in all directions
-          \end{itemize}
+    \item Following the Big Bang, radiation scattered throughout the Universe.
+    \item As the Universe expanded overtime, this radiation has cooled to microwaves known as \alert{Cosmic Microwave Background (CMB)}.
+
+    \begin{columns}[c] % the "c" option specifies center vertical alignment
+    \column{1\textwidth}
+     \centering
+      \begin{figure}
+        \includegraphics[height=4.75cm]{./img/scattering} %page 300
+        \caption{The Shape of Space - Figure 22.5, pg. 300}
+      \end{figure}
+  \end{columns}
+
   \end{itemize}
+\end{frame}
+
+% CMB ------------------------------------------------
+\begin{frame}
+\frametitle{Cosmic Microwave Background, cont.}
+  \begin{itemize}
+    \item Microwaves are nearly uniform in temperature
+    \item Small fluctuations in temperature due to the density of the region where they formed.
+    \item Microwaves travel in all directions.
+    \item First observed in 1965 by Arno Penzias and Robert Wilson of Bell Labs.
+  \end{itemize}
+  % Interesting properties of CMB include:
+    %       \begin{itemize}
+    %         \item Nearly uniform temperature with only small fluctuations.
+    %         \item Distributed evenly throughout space.
+    %         \item Travels in all directions
+    %       \end{itemize}
+
+    \begin{columns}[c] % the "c" option specifies center vertical alignment
+    \column{1\textwidth}
+     \centering
+      \begin{figure}
+        \includegraphics[height=4cm]{./img/scattering} %page 300
+        \caption{The Shape of Space - Figure 22.5, pg. 300}
+      \end{figure}
+  \end{columns}
+
 \end{frame}
 
 % LSS ------------------------------------------------
 \begin{frame}
 \frametitle{Last Scattering Surface}
   \begin{itemize}
-    \item Radiation that we observe has travelled the same distance from where they started.
+    \item Microwaves that we observe from Earth have travelled the same distance from their starting position to the time we record them.
     \item All microwaves observed at one time originated on the surface of the \alert{Last Scattering Sphere (LSS)}.
-    \item The LSS is unique to the observer, so viewing from Earth, Earth is at the center of its LSS.
-    \item There are slight fluctuations in the temperature of the CMB due to the differences in densities of their starting positions.
+    % \item The LSS is unique to the observer, so viewing from Earth, Earth is at the center of its LSS.
+    % \item There are slight fluctuations in the temperature of the CMB due to the differences in densities of their starting positions.
   \end{itemize}
 
   \begin{columns}[c] % the "c" option specifies center vertical alignment
     \column{1\textwidth}
      \centering
-     \includegraphics[height=3cm]{./img/scattering} %page 301
+      \begin{figure}
+        \includegraphics[height=4.5cm]{./img/scattering} %page 301
+        \caption{The Shape of Space - Figure 22.6, pg. 301}
+      \end{figure}
   \end{columns}
 \end{frame}
 
@@ -245,7 +318,10 @@
   \begin{columns}[c] % the "c" option specifies center vertical alignment
     \column{1\textwidth}
      \centering
-     \includegraphics[height=4.5cm]{./img/LssIntersecting} %page 359 - Experiencing Geo 
+      \begin{figure}
+        \includegraphics[height=4.5cm]{./img/LssIntersecting} %page 359 - Experiencing Geo 
+        \caption{The Shape of Space - Figure 22.8, pg. 304}
+      \end{figure}
   \end{columns}
 \end{frame}
 
@@ -260,7 +336,10 @@
   \begin{columns}[c] % the "c" option specifies center vertical alignment
     \column{1\textwidth}
      \centering
-     \includegraphics[height=4.5cm]{./img/shapeofspace} %page 359 - Experiencing Geo 
+      \begin{figure}
+        \includegraphics[height=4.5cm]{./img/shapeofspace} 
+        \caption{Experiencing Geometry- Figure ??, pg. 359}
+      \end{figure}
   \end{columns}
 \end{frame}
 
@@ -273,7 +352,14 @@
     \item Results showed that Universe should hold properties similar to Euclidean Geometry
   \end{itemize}
 
-
+  \begin{columns}[c] % the "c" option specifies center vertical alignment
+      \column{1\textwidth}
+       \centering
+        \begin{figure}
+          \includegraphics[height=3.5cm]{./img/cmbsky} 
+          \caption{http://map.gsfc.nasa.gov/media/121238/index.html}
+        \end{figure}
+    \end{columns}
 \end{frame}
 
 % QUESTIONS ------------------------------------------------
@@ -282,17 +368,24 @@
    \begin{columns}[c] % the "c" option specifies center vertical alignment
     \column{.5\textwidth}
      \centering
-     \includegraphics[height=5cm]{./img/3torusEarth} % shape of space cover
+      \begin{figure}
+        \includegraphics[height=4cm]{./img/3torusEarth} % shape of space cover
+        \caption{http://web.math.princeton.edu/\\conference/Thurston60th/lectures.html}
+      \end{figure}
     \column{.5\textwidth}
      \centering
-     \includegraphics[height=5cm]{./img/poincarespaceEarth} % wraparound universe cover
+      \begin{figure}
+        \includegraphics[height=4cm]{./img/poincarespaceEarth} % wraparound universe cover
+        \caption{http://quibb.blogspot.com/2011/05/\\manifolds-shape-of-universe-iii.html}
+      \end{figure}
   \end{columns}
 \end{frame}
 
 % References ------------------------------------------------
  \begin{frame}[allowframebreaks]
   \frametitle{References} 
-  \scriptsize{\bibliographystyle{acm}}
+  \bibliographystyle{plain}b
+  % \bibliographystyle{plain}
   \bibliography{workscited}
 \end{frame}
 
