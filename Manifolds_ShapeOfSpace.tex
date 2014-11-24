@@ -7,8 +7,11 @@
 \captionsetup{labelformat=empty,labelsep=none}
 
 % References
-\usepackage{natbib}
-\setbeamertemplate{bibliography item}[text]
+\usepackage{url}
+\bibliographystyle{acm}
+\setbeamertemplate{bibliography item}[triangle]
+% \usepackage{natbib}
+% \setbeamertemplate{bibliography item}[text]
 
 % Formatting
 \usetheme{Singapore}
@@ -383,10 +386,11 @@
 
 % References ------------------------------------------------
  \begin{frame}[allowframebreaks]
-  \frametitle{References} 
-  \bibliographystyle{plain}b
+  \frametitle{References}
+  \nocite{*} 
   % \bibliographystyle{plain}
   \bibliography{workscited}
+  % \bibliography{ShapeOfSpace,WraparoundUniverse,ExperiencingGeo,NASA}
 \end{frame}
 
 \end{document}
